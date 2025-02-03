@@ -127,7 +127,7 @@
     display:block;
     position:fixed;
     top:var(--header-height);
-    height:calc(100% - var(--header-height));
+    height:calc(100dvh - var(--header-height));
     left:-380px;
     width:375px;
     opacity:0;
@@ -268,5 +268,11 @@
 @media (max-width: 1199px){
     .menu-mb__btn{
         display: block;
+    }
+}
+
+@media (min-width: 1199px) {
+    .nav__mobile {
+        display: none;
     }
 }
